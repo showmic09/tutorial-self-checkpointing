@@ -1,7 +1,7 @@
 +SingularityImage = "/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-ubuntu-20.04:latest"
 
 executable = fibonacci.py
-arguments = 10
+arguments = 6
 
 checkpoint_exit_code = 85
 transfer_checkpoint_files = fibonacci.checkpoint
