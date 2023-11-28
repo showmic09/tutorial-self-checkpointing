@@ -1,0 +1,19 @@
++SingularityImage = "/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-ubuntu-20.04:latest"
+
+executable = fibonacci.py
+arguments = 10
+
+checkpoint_exit_code = 85
+transfer_checkpoint_files = fibonacci.checkpoint
+
+log = self-checkpoint_$(Process).log
+error = self-checkpoint_$(Process).err
+output = self-checkpoint_$(Process).out
+
+transfer_output_files = fibonacci.result
+
+request_cpu                 = 1
+request_disk                = 2 GB
+request_memory              = 2 GB
+
+queue
