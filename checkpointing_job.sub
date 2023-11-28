@@ -12,7 +12,7 @@ output = self-checkpoint_$(Process).out
 
 transfer_output_files = fibonacci.result
 
-request_cpu                 = 1
+request_cpus                = 1
 request_disk                = 2 GB
 request_memory              = 2 GB
 
